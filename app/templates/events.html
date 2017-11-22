@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Events {% endblock %}
+{% block body %}
+	
+
+<div>
+		<h2>Here are your events</h2>
+		filter events:
+		<select name="events">
+			<option value="category">category</option>
+			<option value="location">location</option>
+		</select>
+
+</div>	
+
+	
+<input type="text" name="finder"><button><em>search</em></button
+	<div class=""> 
+		<strong>Title:</strong><em>cooking Gala</em></br>
+		<strong>Description:</strong><em>enable chefs to compete</em></br>
+		<strong>venue:</strong><em>california gardens</em></br>
+		<strong>date:</strong><em>16/11/2017: from 2:00pm</em></br>
+		<strong>RSVP:</strong><em><a href="rsvp.html">book a reservation</a></em></br>
+		<button> edit</button>
+	</div>
+	<div class="miss">
+		<strong>Title:</strong><em>miss mmu auditions</em></br>
+		<strong>Description:</strong><em>will evaluating the all rounded persons</em></br>
+		<strong>venue:</strong><em>chania falls</em></br>
+		<strong>date:</strong><em>21/11/2017: from 2:00pm</em></br>
+		<strong>RSVP:</strong><em><a href="rsvp.html">book a reservation</a></em></br>
+		<button> edit</button>
+	</div>
+	<div class="fes">
+		<strong>Title:</strong><em>Blaze</em></br>
+		<strong>Description:</strong><em>an event to nurture young talents</em></br>
+		<strong>venue:</strong><em>Vegas sports club</em></br>
+		<strong>date:</strong><em>2/1/2018: from 2:00pm</em></br>
+		<strong>RSVP:</strong><em><a href="rsvp.html">book a reservation</a></em></br>
+		<button> edit</button>
+	</div>
+	
+<div>
+	<button name= "btn-add">Add</button>
+	<button name= "btn-delete">Add</button>
+</div>
+
+	{% endblock %}

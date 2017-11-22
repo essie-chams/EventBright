@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> {% block title %}{% endblock %} </title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'css/event.css')}}">
+    <style>
+
+
+
+    .navigation{
+        background-color:cadetblue;
+        border:1px solid #999;
+        width:95%;
+      
+    }
+    .navigation ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 0px;
+        margin:0px;
+        box-sizing: border-box;
+    }
+    .navigation ul li a{
+        list-style-type: none;
+        text-decoration-line: none;
+        font-size:20px;
+       color:antiquewhite;
+       text-transform: capitalize;
+       padding:5px;
+       transition: background-color: 0.5s;
+        
+    }
+    .navigation ul li a:hover{
+        background-color: black;
+    }
+    .navigation ul{
+        float: right;
+    }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="{{url_for('create')}}">register</a></li>
+            <li><a href="{{url_for('login')}}">login</a></li>
+            <li> <a href="{{url_for('events')}}">events</a></li>
+        </ul>
+    </div>
+{% block body %}
+
+
+{% endblock %}
+</body>
+</html>
