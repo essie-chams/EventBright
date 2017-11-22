@@ -1,0 +1,85 @@
+<html>
+<head><title> viewing events</title>
+<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+<style type="text/css">
+	div{
+		width: 340px;
+		padding: 10px;
+		margin: 20px;
+		border: 10px  solid gray;
+		float: left;
+		border-radius: 12px;
+	}
+div.miss
+{
+	position: relative;
+ 	float: right;
+ 	border-radius: 12px;
+}
+div.fes
+{
+	border-radius: 12px;
+}
+button{
+	border-radius: 12px;
+}
+</style>
+</head>
+<body bgcolor="#800000">
+	
+	<center><h1><strong>MyEvents</strong></h1></center>
+	<center>
+		<nav>
+		<a href="create.html">register</a>
+		<a href="logini.html">login</a>
+		<a href="index.html">Home</a></nav>
+</center>
+	
+	<center><h2>Here are your events</h2></center>
+	filter events <select name="events">
+  <option value="category">category</option>
+  <option value="location">location</option>
+</select>
+<input type="text" name="finder"><button><em>search</em></button>
+	<div>
+		<strong>Title:</strong><em>cooking Gala</em></br>
+		<strong>Description:</strong><em>enable chefs to compete</em></br>
+		<strong>venue:</strong><em>california gardens</em></br>
+		<strong>date:</strong><em>16/11/2017: from 2:00pm</em></br>
+		<strong>RSVP:</strong><em><a href="rsvp.html">book a reservation</a></em></br>
+		<button> edit</button>
+	</div>
+	<div class="miss">
+		<strong>Title:</strong><em>miss mmu auditions</em></br>
+		<strong>Description:</strong><em>will evaluating the all rounded persons</em></br>
+		<strong>venue:</strong><em>chania falls</em></br>
+		<strong>date:</strong><em>21/11/2017: from 2:00pm</em></br>
+		<strong>RSVP:</strong><em><a href="rsvp.html">book a reservation</a></em></br>
+		<button> edit</button>
+	</div>
+	<div class="fes">
+		<strong>Title:</strong><em>Blaze</em></br>
+		<strong>Description:</strong><em>an event to nurture young talents</em></br>
+		<strong>venue:</strong><em>Vegas sports club</em></br>
+		<strong>date:</strong><em>2/1/2018: from 2:00pm</em></br>
+		<strong>RSVP:</strong><em><a href="rsvp.html">book a reservation</a></em></br>
+		<button> edit</button>
+	</div>
+	
+	<center><form>
+		<table>
+			<tr>
+			<td><button>add</button></td>
+			<td><button>delete</button></td>
+		</tr>
+		</table>
+		
+
+
+	</form></center>
+
+	
+
+</body>
+
+</html>
